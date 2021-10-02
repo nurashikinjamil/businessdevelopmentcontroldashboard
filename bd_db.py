@@ -427,9 +427,9 @@ with st.beta_container():
             dict(Disc="PIC", Start='2021-01-04', Finish='2021-08-10'),
             dict(Disc="Prob", Start='0%', Finish='100%'),
             dict(Disc="Prio", Start='High', Finish='Low'),
-            dict(Disc="CTG", Name='Leasing', Name='Main Contractor', Name='Leasing', Name='Leasing', Name='Leasing',),
-            dict(Disc="IDSTRY", Start='2021-06-20', Finish='2021-12-20'),
-            dict(Disc="ST", Start='2021-07-20', Finish='2021-12-30')
+            dict(Disc="CTG", Name='Leasing', Name='Main Contractor', Name='Trading', Name='Sub-contractor', Name='Maintenance',),
+            dict(Disc="IDSTRY", Name='Railway', Name='IT', Name='Info-comm', Name='Power', Name='Telecommunication', Name='Big Data', ),
+            dict(Disc="SS", Name='Unsolicated proposal', Name='Potential',Name='Submitted',Name='Accepted',Name='Rejected',Name='Under evaluation',Name='Future', )
         ])
         fig2 = px.timeline(df, x_start="Start", x_end="Finish", y='Disc')
         fig2.update_yaxes(autorange="reversed")
