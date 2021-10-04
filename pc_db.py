@@ -9,13 +9,13 @@ html_header="""
 <head>
 <title>PControlDB</title>
 <meta charset="utf-8">
-<meta name="keywords" content="project control, dashboard, management, EVA">
-<meta name="description" content="project control dashboard">
+<meta name="keywords" content="project management, dashboard, EVA">
+<meta name="description" content="project management control">
 <meta name="author" content="Nur Ashikin Jamil">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<h1 style="font-size:300%; color:#008080; font-family:Georgia"> PROJECT CONTROL <br>
- <h2 style="color:#008080; font-family:Georgia"> DASHBOARD</h3> <br>
+<h1 style="font-size:300%; color:#008080; font-family:Georgia"> PROJECT MANAGEMENT <br>
+ <h2 style="color:#008080; font-family:Georgia"> CONTROL </h3> <br>
  <hr style= "  display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -24,7 +24,7 @@ html_header="""
   border-style: inset;
   border-width: 1.5px;"></h1>
 """
-st.set_page_config(page_title="Project Control Dashboard", page_icon="", layout="wide")
+st.set_page_config(page_title="Project Management Control", page_icon="", layout="wide")
 st.markdown('<style>body{background-color: #fbfff0}</style>',unsafe_allow_html=True)
 st.markdown(html_header, unsafe_allow_html=True)
 st.markdown(""" <style>
@@ -689,15 +689,3 @@ html_line="""
 <p style="color:Gainsboro; text-align: right;">By: larryprato@gmail.com</p>
 """
 st.markdown(html_line, unsafe_allow_html=True)
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
