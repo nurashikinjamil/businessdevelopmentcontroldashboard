@@ -9,13 +9,13 @@ html_header="""
 <head>
 <title>PControlDB</title>
 <meta charset="utf-8">
-<meta name="keywords" content="project management, dashboard, EVA">
+<meta name="keywords" content="project management control, NUR Group Berhad, EVA">
 <meta name="description" content="project management control">
 <meta name="author" content="Nur Ashikin Jamil">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<h1 style="font-size:300%; color:#008080; font-family:Georgia"> PROJECT MANAGEMENT <br>
- <h2 style="color:#008080; font-family:Georgia"> CONTROL </h3> <br>
+<h1 style="font-size:300%; color:#008080; font-family:Georgia"> PROJECT MANAGEMENT CONTROL <br>
+ <h2 style="color:#008080; font-family:Georgia"> NUR Group Berhad </h3> <br>
  <hr style= "  display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
