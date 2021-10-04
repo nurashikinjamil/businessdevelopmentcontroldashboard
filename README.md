@@ -1,2 +1,2 @@
-# projectcontroldashboard
-Project Control Dashboard
+# projectmanagementcontrol
+Project Management Control
