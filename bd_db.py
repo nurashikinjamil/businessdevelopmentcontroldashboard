@@ -1,9 +1,7 @@
-import plotly.express as px
-import plotly.graph_objects as go
 import streamlit as st
+
+import numpy as np
 import pandas as pd
-
-
 
 html_header="""
 <head>
@@ -183,7 +181,7 @@ with st.beta_container():
 
         fig_cv.update_layout(paper_bgcolor="#fbfff0", font={'color': "#008080", 'family': "Arial"}, height=135, width=250,
                              margin=dict(l=10, r=10, b=15, t=20))
-        st.plotly_chart(fig_cv)
+       
         st.markdown(html_card_footer1, unsafe_allow_html=True)
     with col3:
         st.write("")
@@ -203,7 +201,7 @@ with st.beta_container():
                     {'range': [1, 1.5], 'color': '#3D9970'}]}))
         fig_sv.update_layout(paper_bgcolor="#fbfff0", font={'color': "#008080", 'family': "Arial"}, height=135, width=250,
                              margin=dict(l=10, r=10, b=15, t=20))
-        st.plotly_chart(fig_sv)
+        
         st.markdown(html_card_footer2, unsafe_allow_html=True)
     with col5:
         st.write("")
@@ -229,7 +227,7 @@ with st.beta_container():
                             showgrid=False, gridwidth=0.5, gridcolor='#F7F7F7')
         fig_hh.update_yaxes(showline=True, linewidth=1, linecolor='#F7F7F7', mirror=True, nticks=10, rangemode="tozero",
                             showgrid=False, gridwidth=0.5, gridcolor='#F7F7F7')
-        st.plotly_chart(fig_hh)
+       
     with col7:
         st.write("")
 
@@ -311,46 +309,12 @@ with st.beta_container():
                            font={'color': "#008080", 'family': "Georgia"}, height=340, width=550, margin=dict(
                 l=51, r=5, b=10, t=50))
         fig2.update_traces(marker_color='#17A2B8', selector=dict(type='bar'))
-        st.plotly_chart(fig2)
+       
 
-disciplinas= ['ICT', 'Comms', 'EPC', 'Power']
+sector= ['ICT', 'Comms', 'EPC', 'Power']
 
-selected_disc = st.selectbox(' Select discipline', disciplinas)
+selected_disc = st.selectbox(' Select select', select)
 html_br="""
 <br>
-"""
-st.markdown(html_br, unsafe_allow_html=True)
-
-html_card_header4="""
-<div class="card">
-  <div class="card-body" style="border-radius: 10px 10px 0px 0px; background: #eef9ea; padding-top: 10px; width: 250px;
-   height: 50px;">
-    <h5 class="card-title" style="background-color:#eef9ea; color:#008080; font-family:Georgia; text-align: center; padding: 5px 0;">Progress For Selected Discipline</h5>
-  </div>
-</div>
-"""
-html_card_footer4="""
-<div class="card">
-  <div class="card-body" style="border-radius: 0px 0px 10px 10px; background: #eef9ea; padding-top: 1rem;; width: 250px;
-   height: 50px;">
-    <p class="card-title" style="background-color:#eef9ea; color:#008080; font-family:Georgia; text-align: center; padding: 0px 0;">Montly Value (%)</p>
-  </div>
-</div>
-"""
-html_card_header5="""
-<div class="card">
-  <div class="card-body" style="border-radius: 10px 10px 0px 0px; background: #eef9ea; padding-top: 10px; width: 250px;
-   height: 50px;">
-    <h5 class="card-title" style="background-color:#eef9ea; color:#008080; font-family:Georgia; text-align: center; padding: 5px 0;">Spend Hours For Selected Discipline</h5>
-  </div>
-</div>
-"""
-html_card_footer5="""
-<div class="card">
-  <div class="card-body" style="border-radius: 0px 0px 10px 10px; background: #eef9ea; padding-top: 1rem;; width: 250px;
-   height: 50px;">
-    <p class="card-title" style="background-color:#eef9ea; color:#008080; font-family:Georgia; text-align: center; padding: 0px 0;">Montly Relative Change (%)</p>
-  </div>
-</div>
 """
 st.markdown(html_line, unsafe_allow_html=True)
