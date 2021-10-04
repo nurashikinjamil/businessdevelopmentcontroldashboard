@@ -31,7 +31,7 @@ st.markdown(""" <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 </style> """, unsafe_allow_html=True)
-data=pd.read_excel('curva.xlsx')
+data=pd.read_excel('bd2021.xlsx')
 
 html_card_header1="""
 <div class="card">
